@@ -1,5 +1,7 @@
 # timestmp
 
+[![Rust](https://github.com/gglyptodon/timestmp/actions/workflows/rust.yml/badge.svg)](https://github.com/gglyptodon/timestmp/actions/workflows/rust.yml)
+
 example:
 
 ```
