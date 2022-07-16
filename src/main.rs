@@ -1,6 +1,6 @@
-use std::{io, io::prelude::*};
-use std::error::Error;
 use chrono::offset::Local;
+use std::error::Error;
+use std::{io, io::prelude::*};
 pub type DynResult<T> = Result<T, Box<dyn Error>>;
 
 pub fn main() -> DynResult<()> {
@@ -10,7 +10,3 @@ pub fn main() -> DynResult<()> {
     }
     Ok(())
 }
-
-//pub fn get_current_timestamp() -> String {
-//    format!("{}", chrono::offset::Local::now())
-//}
