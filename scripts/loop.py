@@ -1,7 +1,9 @@
 import time
+import datetime
+
 def main():
     while True:
-        print("hello!")
+        print("hello! @ {}".format(datetime.datetime.now()))
         time.sleep(5)
 
 
