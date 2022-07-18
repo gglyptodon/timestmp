@@ -2,8 +2,14 @@
 
 [![Rust](https://github.com/gglyptodon/timestmp/actions/workflows/rust.yml/badge.svg)](https://github.com/gglyptodon/timestmp/actions/workflows/rust.yml)
 
-example:
+Hint: 
+For python, set ``export PYTHONUNBUFFERED=1`` 
+or  use ``python -u``. 
 
+In general, you can use ``stdbuf -o OPTION`` to adjust the stdout buffer, e.g. use ``stdbuf -oL MY_COMMAND | MY_OTHER_COMMAND `` for line buffering.
+
+
+Example:
 ```
 cargo build --release
 python3 -u scripts/loop.py | target/release/timestmp
