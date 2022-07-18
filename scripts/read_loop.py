@@ -3,7 +3,8 @@ import sys
 def main():
     try:
        for line in iter(sys.stdin.readline, b''):
-          print("read @ {}:\n{}".format(datetime.datetime.now(), line))
+          if line:
+              print("read @ {}:\n{}".format(datetime.datetime.now(), line))
     except KeyboardInterrupt:
        sys.stdout.flush()
        pass
