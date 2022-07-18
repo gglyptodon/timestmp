@@ -27,3 +27,16 @@ hello!
 hello!
 [...]
 ```
+---
+Example (redirect stderr to stdout and add timestamp):
+
+``python3 -m http.server 2>&1| target/release/timestmp
+``
+```
+# length = 60 @ 2022-07-18 10:47:37.147247051 +02:00 #
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+# length = 59 @ 2022-07-18 10:47:45.683374044 +02:00 #
+127.0.0.1 - - [18/Jul/2022 10:47:45] "GET / HTTP/1.1" 200 -
+# length = 66 @ 2022-07-18 10:47:53.072460013 +02:00 #
+
+```
